@@ -1,0 +1,331 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor0: #2F486D;
+    --cor1: #F3EAE0;
+    --cor2: #223148;
+    --cor3: #D2C7B8;
+
+    --font-destaque: "Cormorant Garamond", serif;;
+    --font-padrao: "Roboto Condensed", Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    padding: 10px 5%; /* O 5% cria um respiro nas laterais do site */
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.411);
+}
+
+header img {
+    border-radius: 10px;    
+    width: 55px;
+    margin-left: 20px;
+    
+}
+
+header nav {
+    margin-left: auto;   /* Empurra o menu para a direita */
+    margin-right: 10%;   /* Ajuste este valor para controlar a distância da borda direita */
+   
+}
+
+header nav a {
+    margin-left: 15px;
+    color: var(--cor3);
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+nav a:hover {
+    border-radius: 5px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+main {
+    margin-left: 15px;
+}
+
+main h1,h2 {
+    font-family: var(--font-destaque);
+}
+
+main h1 {
+    padding: 15px 0px;
+}
+
+main h2 {
+    padding: 0px 0px 15px 0px;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    font-family: var(--font-padrao);
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.bloco-um, .bloco-tres {
+    display: flex;
+    align-items: flex-start; /* Alinha pelo topo para o margin-top negativo da imagem funcionar melhor */
+    justify-content: space-between;
+    gap: 40px;
+    padding: 45px 5%; /* Aumentei um pouco para não colar na borda em telas médias */
+    margin-top: 30px;  
+}
+
+.bloco-um-texto, .bloco-dois-texto, .bloco-quatro-texto {
+    text-align: center;
+    flex: 1;
+}
+
+main img {
+    max-width: 400px;
+    width: 100%; 
+    height: auto; 
+    flex-shrink: 0; /* Bloqueia a distorção lateral */
+    margin: -7px 30px 0px 30px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.404);
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    font-size: 1.1em;
+    justify-content: center;
+}
+
+.redes-sociais > a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.redes-sociais-icone {
+    padding-left: 10px;
+}
+
+.redes-sociais > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+.bloco-dois, .bloco-quatro {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    display: flex;
+    margin: 20px 0px 0px -20px;
+    padding: 20px;
+    align-items: center;
+    gap: 50px;
+    padding: 503px;
+    padding: 45px 90px 45px 0px;
+}
+
+.bloco-dois > img {
+    margin-left: 73px;
+}
+
+
+.subtitulo {
+    font-size: 2em;
+    
+}
+
+button {
+    font-family: var(--font-destaque);
+    font-size: 1.1em;
+    background-color: var(--cor3);
+    color: var(--cor2);
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: 7px 4px 10px rgba(0, 0, 0, 0.527);
+    }
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+
+}
+
+.bloco-tres-texto {
+    text-align: center;
+    flex: 1;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.imagem-teste {
+    
+    width: 100%; 
+    height: auto; 
+    flex-shrink: 0; /* Bloqueia a distorção lateral */
+    margin: -7px 30px 0px 30px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.404);
+
+}
+
+.bloco-quatro > img {
+    margin-left: 73px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribui os 3 blocos: esquerda, centro e direita */
+    align-items: center;           /* Alinha todos verticalmente ao centro */
+    padding:5px 5%;
+   
+}
+
+
+footer img {
+    border-radius: 10px;    
+    width: 55px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.footer-inicio {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-inicio a {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.footer-inicio a:hover {
+    background-color: var(--cor0);
+    padding: 10px;
+    color: var(--cor1);
+}
+
+
+.contatos {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 10px;
+}
+
+.footer-contatos {
+    display: flex;
+    gap: 25px;  
+}
+
+.footer-contatos i {
+    font-size: 24px;  
+    color: var(--cor2)
+}
+
+footer button {
+    font-family: var(--font-destaque);
+    font-size: 1.1em;
+    background-color: var(--cor3);
+    color: var(--cor2);
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 7px 4px 10px rgba(0, 0, 0, 0.527);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .bloco-um {
+        flex-direction: column-reverse; /* Inverte a ordem e empilha: imagem em cima, texto embaixo */
+        align-items: center;           /* Centraliza tudo no meio da tela do celular */
+        text-align: center;
+        gap: 20px;                     /* Diminui o espaço entre eles no mobile */
+        padding: 20px 5%;
+    }
+
+    main img {
+        max-width: 250px;              /* Diminui o tamanho da foto no celular */
+        margin: 0;                     /* Remove as margens negativas/laterais que usamos no desktop */
+    }
+    
+    .bloco-um-texto {
+        max-width: 100%;
+    }
+
+    .bloco-dois{
+        flex-direction: column-reverse; /* Inverte a ordem e empilha: imagem em cima, texto embaixo */
+        align-items: center;           /* Centraliza tudo no meio da tela do celular */
+        text-align: center;
+        gap: 20px;                     /* Diminui o espaço entre eles no mobile */
+        padding: 5%;
+        padding-top: 130px;
+    }
+
+    .bloco-dois-texto {
+        max-width: 100%;
+        padding-right: 0px;
+    }
+
+    .bloco-dois > img {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .bloco-tres {
+        flex-direction: column; /* Inverte a ordem e empilha: imagem em cima, texto embaixo */
+        align-items: center;           /* Centraliza tudo no meio da tela do celular */
+        text-align: center;
+        gap: 20px;                     /* Diminui o espaço entre eles no mobile */
+        padding: 5%;
+        padding-top: 20px;
+    }
+
+    .bloco-tres-texto {
+        max-width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .bloco-quatro {
+        flex-direction: column-reverse; /* Inverte a ordem e empilha: imagem em cima, texto embaixo */
+        align-items: center;           /* Centraliza tudo no meio da tela do celular */
+        text-align: center;
+        gap: 20px;                     /* Diminui o espaço entre eles no mobile */
+        padding: 5%;
+        padding-top: 150px;
+
+    }
+
+    .bloco-quatro > img {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+}
+
