@@ -68,11 +68,7 @@ main h1,h2 {
 }
 
 main h1 {
-    padding: 15px 0px;
-}
-
-main h2 {
-    padding: 0px 0px 15px 0px;
+        padding: 15px 0px;
 }
 
 main p {
@@ -80,7 +76,7 @@ main p {
     text-indent: 30px;
     font-family: var(--font-padrao);
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 .bloco-um, .bloco-tres {
@@ -151,8 +147,8 @@ main img {
 
 
 .subtitulo {
+    margin-bottom: 25px;
     font-size: 2em;
-    
 }
 
 button {
